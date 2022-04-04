@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Cotizacion Dolar";
+}
+
+@model CotizacionDolarModel 
+
+<div class="text-center">
+    <h1 class="display-3">Bienvenido al sitio que informará la cotización actual del dolar</h1>
+    <h2 class="display-3">Actualmente la cotización del dolar es:</h2>
+    <h3 class="display-4">Compra: @Model.cotizacionCompra</h3>
+    <h3 class="display-4">Venta: @Model.cotizacionVenta</h3>
+    <h3 class="display-4">Fecha y hora ARG: @Model.fecha.ToLocalTime()</h3>
+</div>
