@@ -8,9 +8,9 @@ namespace CotizacionDolarLibrary
 {
     public static class CotizacionDolarAPI
     {
-        public static CotizacionDolarDTO ObtenerCotizacionDolar()
+        public static CotizacionDolarDTO ObtenerCotizacionDolar(string url)
         {
-            var url = $"https://api-dolar-argentina.herokuapp.com/api/dolaroficial";
+            url = $"{url}/dolaroficial";
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
